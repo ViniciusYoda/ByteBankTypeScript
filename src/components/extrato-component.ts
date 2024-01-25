@@ -11,11 +11,9 @@ function renderizarExtrato(): void {
     elementoRegistroTransacoesExtrato.innerHTML = "";
     let htmlRegistroTransacoes: string = "";
 
-    for (let grupoTransacao of gruposTransacoes)
-    {
+    for (let grupoTransacao of gruposTransacoes) {
         let htmlTransacaoItem: string = "";
-        for (let transacao of grupoTransacao.transacoes)
-        {
+        for (let transacao of grupoTransacao.transacoes) {
             htmlTransacaoItem += `
                 <div class="transacao-item">
                     <div class="transacao-info">
